@@ -10,7 +10,8 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"compile": "svelte-kit build && svelte-kit preview"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -28,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"daisyui": "^2.15.1"
 	}
 }
